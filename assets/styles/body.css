@@ -1,0 +1,398 @@
+.body {
+	width: 700px;
+	padding: 10px;
+}
+
+.place {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40px;
+	width: 100%;
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+}
+
+.place__left {
+	position: relative;
+	width: 50%;
+}
+
+.place__time {
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.circle.-clock {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 20px;
+	width: 20px;
+}
+
+.circle.-clock:before {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 8px;
+	width: 2px;
+	background-color: black;
+	left: 5px;
+	top: 1px;	
+	border-radius: 10px;
+}
+
+.circle.-clock:after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 8px;
+	width: 2px;
+	background-color: black;
+	left: 8px;
+	top: 3px;	
+	border-radius: 10px;
+	transform: rotate(45deg);
+}
+
+.place__right {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.circle.-location {
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 16px;
+	width: 16px;	
+}
+
+/*.circle.-location:before {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 12px;
+	width: 2px;
+	background-color: black;
+	transform: rotate(35deg);
+	left: 5px;
+	top: 7px;	
+	border-radius: 10px;
+}
+
+.circle.-location:after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 12px;
+	width: 2px;
+	background-color: black;
+	transform: rotate(135deg);
+	right: 6px;
+	top: 7px;	
+	border-radius: 10px;
+}*/
+
+.circle.-small {
+	position: absolute;
+	left: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 5px;
+	width: 5px;
+}
+
+.ticket {
+	position: absolute;
+	right: 35px;
+	top: -7px;
+	background-color: transparent;
+	height: 30px;
+	width: 15px;
+	transform: rotate(45deg);
+	border: 4px solid black;
+}
+
+.ticket:before {
+	position: absolute;
+	top: 2px;
+	left: -1px;
+	display: block;
+	content: "";
+	height: 2px;
+	width: 10px;
+	background-color: black;
+}
+
+.circle {
+	background-color: transparent;
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+.info {
+	padding: 10px 0;
+	position: relative;
+}
+
+.info__desc {
+	font-size: 20px;
+}
+
+.speaker {
+	position: absolute;
+	top: -20px;
+	right: -50%;
+	padding: 10px;
+	border: 5px solid black;
+	height: 175px;
+	width: 300px;
+}
+
+.speaker__name {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.speaker__avatar {
+	position: absolute;
+	left: 10px;
+	top: 50px;
+	max-width: 30%;
+	border-radius: 50%;
+}
+
+.speaker__desc {
+	position: absolute;
+	top: 50px;
+	right: -10px;
+	width: 190px;
+}
+
+.speaker__author {
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+
+.speaker__subtitle {
+	font-weight: 100;
+}
+
+.opinion {
+	position: relative;
+	margin-top: 30px;
+	height: 150px;
+}
+
+.opinion__title {
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.opinion__title:before {
+	position: absolute;
+	bottom: -15px;
+	left: 100px;
+	display: block;
+	content: "";
+	height: 15px;
+	width: 15px;
+	background-color: white;
+	border-left: 2px solid black;
+}
+
+.opinion__title:after {
+	position: absolute;
+	bottom: -18px;
+	left: 109px;
+	display: block;
+	content: "";
+	height: 20px;
+	width: 0px;
+	background-color: white;
+	border-right: 2px solid black;
+	transform: rotate(45deg);
+}
+
+.opinion__subtitle {
+	position: absolute;
+	top: 130px;
+	left: 5px;
+	font-size: 15px;
+}
+
+.comment {
+	margin-top: 30px;
+}
+
+.comment__title {
+	padding: 0 10px;
+	border-left: 4px solid #e02f2f;
+}
+
+.comment__subtitle {
+	margin-top: 15px;
+	font-size: 15px;
+	position: relative;
+}
+
+.comment__subtitle:after {
+	position: absolute;
+	top: 20px;
+	display: block;
+	content: "за обедом";
+	color: black;
+	font-size: 10px;
+}
+
+.container.-details {
+	border-bottom: 3px solid black;
+}
+
+.details {
+	height: 450px;
+	margin-top: 40px;
+	width: 70%;
+	position: relative;  
+}
+
+.details__title {
+	margin-bottom: 15px;
+}
+
+.details__list {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	height: 450px;
+	list-style-type: none;
+}
+
+.detail {
+	color: black;
+}
+
+.list__left {
+	font-weight: 600;
+}
+
+.list__right {
+	line-height: 20px;
+	top: 0;
+}
+
+.actors {
+	top: 44px;
+	position: absolute;
+	right: 40px;
+}
+
+.actors__title {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.actors__list {
+	list-style-type: none;
+	line-height: 20px;
+	font-size: 17px;
+}
+
+.icons {
+	display: flex;
+ 	padding: 10px;
+}
+
+.icons__img {
+	width: 25px;
+	margin-right: 15px;
+}
+
+.addons {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	height: 375px;
+}
+
+.addons__left {
+	position: relative;
+	width: 50%;
+}
+
+.left__title {
+	position: absolute;
+	font-size: 25px;
+}
+
+.addons__img {
+	position: absolute;
+	top: 40px;
+	max-width: 100%;
+}
+
+.arrow {
+	position: absolute;
+	background-color: transparent;
+	bottom: 50%;
+	height: 40px;
+	width: 40px;
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: translateY(50%);
+}
+
+.arrow.-left {
+	left: 20px;
+	transform: rotate(45deg);
+}
+
+.arrow.-right {
+	right: 20px;
+	transform: rotate(225deg);
+}
+
+.addons__right {
+	position: relative;
+	width: 50%;
+}
+
+.right__title {
+	position: absolute;
+	font-size: 25px;
+	left: 65px;
+}
+
+.addons__list {
+	list-style-type: none;
+	position: absolute;
+	top: 30px;
+	left: 25px;
+}
+
+.addons__link {
+	font-size: 12px;
+	color: black;
+	line-height: 40px;
+	border-bottom: 1px dotted black;
+}
+
+.addons__point {
+	margin-bottom: 0px;
+}
+
+.addons__link:hover {
+	color: salmon;
+	border-bottom: 1px dotted salmon;
+}

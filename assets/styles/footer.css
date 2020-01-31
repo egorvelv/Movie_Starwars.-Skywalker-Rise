@@ -1,0 +1,26 @@
+.footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	height: 80px;
+	padding: 40px;
+}
+
+.footer__logo {
+	max-width: 8%;
+}
+
+.footer__title {
+	position: absolute;
+	top: 30px;
+	left: 130px;
+	color: white;
+}
+
+.icons.-footer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}

@@ -1,0 +1,49 @@
+.hero {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	background-image: url("../img/hero__bg.jpg");
+	height: calc(85vh - 80px);
+	background-size: cover;
+	padding: 40px;
+}
+
+.hero__left {
+	height: 100%;
+	width: 50%;
+}
+
+.hero__right {
+	height: 100%;
+	width: 50%;
+}
+
+.video {
+	position: absolute;
+	bottom: 50%;
+	transform: translateY(50%);
+	right: 100px;
+	width: 45%;
+	height: 60%;
+}
+
+.hero__date {
+	position: absolute;
+	top: 20%;
+	color: white;
+	font-size: 40px;
+}
+
+.hero__title {
+	top: 30%;
+	position: absolute;
+	color: white;
+	font-size: 40px;
+}
+
+.hero__subtitle {
+	position: absolute;
+	bottom: 20%;
+	color: white;
+	font-size: 20px;
+}

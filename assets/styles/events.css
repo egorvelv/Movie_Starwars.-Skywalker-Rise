@@ -1,0 +1,131 @@
+.events {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: black;
+	color: white;
+	height: 400px;
+	padding: 40px;
+}
+
+.events__title {
+	position: absolute;
+	top: 40px;
+}
+
+.title__link {
+	color: white;
+	transition: .5s;
+}
+
+.title__link:hover {
+	color: red;
+	border-bottom: 1px solid red;
+}
+
+.events__left {
+	position: relative;
+	height: 85%;
+	width: 55%;
+	background-image: url(../img/left__bg.jpg);
+	background-size: cover;
+}
+
+.events__right {
+	position: relative;
+	height: 85%;
+	width: 40%;
+	background-image: url(../img/right__bg.jpg);
+	background-size: cover;
+}
+
+.events__date {
+	position: absolute;
+	bottom: 60px;
+	left: 15px;
+}
+
+.events__name {
+	position: absolute;
+	bottom: 40px;
+	left: 15px;
+}
+
+.events__nom {
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+}
+
+.events__link {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: black;
+	border-bottom: 2px solid white;
+}
+
+.btn {
+	position: absolute;
+	background-color: black;
+	padding: 20px;
+}
+
+.btn.-large {
+	display: flex;
+	align-items: center;
+	color: white;
+	width: calc(100% - 40px);
+	height: 80px;
+	font-size: 25px;
+}
+
+.btn.-with-arrow {
+	border: 1px solid white;
+}
+
+.btn.-with-arrow:hover .btn__arrow {
+	transform: translateX(50px);
+}
+
+.events__text {
+	position: absolute;
+	left: 30%;
+}
+
+.btn__arrow {
+	position: absolute;
+	right: 35%;
+	height: 3px;
+	width: 80px;
+	background-color: white;
+	transition: .5s ease-out;
+}
+
+.btn__arrow:before {
+	position: absolute;
+	right: -2px;
+	top: -10px;
+	display: block;
+	content: "";
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	transform: rotate(45deg);
+}
+
+.btn__arrow:after {
+	position: absolute;
+	right: -2px;
+	bottom: -10px;
+	display: block;
+	content: "";
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	transform: rotate(135deg);
+}

@@ -1,0 +1,42 @@
+.header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	background-color: black;
+	color: white;
+	padding: 0 10px;
+}
+
+.header__left {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+}
+
+.header__logo {
+	position: absolute;
+	left: 20px;
+	max-width: 9%;
+}
+
+.header__right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 30%;
+}
+
+.header__link {
+	margin-right: 40px;
+	color: white;
+	font-size: 15px;
+}
+
+.header__link:last-child {
+	margin-right: 0px;
+}

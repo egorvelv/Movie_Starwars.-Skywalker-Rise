@@ -1,0 +1,29 @@
+body, h1, h2, h3, h4, h5, p, ul, ol li {
+	margin: 0;
+	font-family: "Helvetica";
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0px;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
