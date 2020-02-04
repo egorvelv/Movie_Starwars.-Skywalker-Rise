@@ -75,32 +75,6 @@
 	width: 16px;	
 }
 
-/*.circle.-location:before {
-	position: absolute;
-	display: block;
-	content: "";
-	height: 12px;
-	width: 2px;
-	background-color: black;
-	transform: rotate(35deg);
-	left: 5px;
-	top: 7px;	
-	border-radius: 10px;
-}
-
-.circle.-location:after {
-	position: absolute;
-	display: block;
-	content: "";
-	height: 12px;
-	width: 2px;
-	background-color: black;
-	transform: rotate(135deg);
-	right: 6px;
-	top: 7px;	
-	border-radius: 10px;
-}*/
-
 .circle.-small {
 	position: absolute;
 	left: 2px;
@@ -324,6 +298,7 @@
 	display: flex;
 	justify-content: space-between;
 	height: 375px;
+	width: 100%;
 }
 
 .addons__left {
@@ -332,13 +307,11 @@
 }
 
 .left__title {
-	position: absolute;
 	font-size: 25px;
+	margin-bottom: 10px;
 }
 
 .addons__img {
-	position: absolute;
-	top: 40px;
 	max-width: 100%;
 }
 
@@ -364,21 +337,16 @@
 }
 
 .addons__right {
-	position: relative;
 	width: 50%;
+	margin-left: 60px;
 }
 
 .right__title {
-	position: absolute;
 	font-size: 25px;
-	left: 65px;
 }
 
 .addons__list {
 	list-style-type: none;
-	position: absolute;
-	top: 30px;
-	left: 25px;
 }
 
 .addons__link {
