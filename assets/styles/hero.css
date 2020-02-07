@@ -1,4 +1,5 @@
 .hero {
+	margin-top: 80px;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
@@ -6,6 +7,7 @@
 	height: calc(85vh - 80px);
 	background-size: cover;
 	padding: 40px;
+	z-index: 1;
 }
 
 .hero__left {

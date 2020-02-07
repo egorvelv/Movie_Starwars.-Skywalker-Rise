@@ -188,7 +188,7 @@
 
 .opinion__title:after {
 	position: absolute;
-	bottom: -18px;
+	bottom: -17.5px;
 	left: 109px;
 	display: block;
 	content: "";
@@ -196,7 +196,7 @@
 	width: 0px;
 	background-color: white;
 	border-right: 2px solid black;
-	transform: rotate(45deg);
+	transform: rotate(50deg);
 }
 
 .opinion__subtitle {
@@ -234,6 +234,11 @@
 	border-bottom: 3px solid black;
 }
 
+.lists {
+	display: flex;
+	justify-content: space-between;
+}
+
 .details {
 	height: 450px;
 	margin-top: 40px;
@@ -267,20 +272,23 @@
 }
 
 .actors {
-	top: 44px;
-	position: absolute;
-	right: 40px;
+
 }
 
 .actors__title {
 	font-size: 18px;
 	font-weight: 600;
+	margin-bottom: 10px;
 }
 
 .actors__list {
 	list-style-type: none;
-	line-height: 20px;
+	line-height: 18px;
 	font-size: 17px;
+}
+
+.actor {
+	margin-bottom: 10px;
 }
 
 .icons {
